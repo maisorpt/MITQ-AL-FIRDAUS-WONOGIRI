@@ -1,5 +1,5 @@
 #daftar {
-    background-image: url("santri.jpg");
+    background-image: url("../img/santri.jpg");
     background-color: #fdfdfd;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,6 +20,12 @@
 background: rgb(6,111,4);
 background: linear-gradient(0deg, rgba(6,111,4,1) 0%, rgba(4,170,29,1) 51%, rgba(1,74,10,0.9917890570136938) 100%);
 }
+
+.bg-cool{
+    background: rgb(6,111,4);
+background: linear-gradient(0deg, rgba(6,111,4,1) 19%, rgba(0,74,11,1) 72%, rgba(0,74,11,1) 100%);
+    }
+
 .hitam {
     background-color: rgb(0, 0, 0);
    }
