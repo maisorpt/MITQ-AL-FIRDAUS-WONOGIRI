@@ -444,7 +444,7 @@
           const noayat = req.data.ayahs
             .map(item => `<p class="ayat" id="${item.number}" idayat="${item.numberInSurah}">${item.numberInSurah}</p>`)
             .join('');
-          const ayaat   = req.data.ayahs[0].text;
+          const ayaat   = req.data.ayahs[0].text + '(' + req.data.ayahs[0].numberInSurah + ')';
 
           $('#show-ayat').html(ayaat);
           $('#show-number').html(noayat);
@@ -458,7 +458,8 @@
               //alert(request.data);
 
               const ayat = request.data.text;
-              const tampil = '<p>' + ayat + '</p>';
+              const nomorayat = request.data.numberInSurah;
+              const tampil = '<p>' + ayat + '(' + nomorayat + ')</p>';
 
               $('#show-ayat').html(tampil);
 
