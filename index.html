@@ -444,7 +444,9 @@
           const noayat = req.data.ayahs
             .map(item => `<p class="ayat" id="${item.number}" idayat="${item.numberInSurah}">${item.numberInSurah}</p>`)
             .join('');
+          const ayaat   = req.data.ayahs[0].text;
 
+          $('#show-ayat').html(ayaat);
           $('#show-number').html(noayat);
 
           $('.ayat').on('click', function (event) {
